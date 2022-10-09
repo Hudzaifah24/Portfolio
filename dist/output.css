@@ -783,10 +783,6 @@ video {
   border-width: 1px;
 }
 
-.border-b-2 {
-  border-bottom-width: 2px;
-}
-
 .border-r-8 {
   border-right-width: 8px;
 }
@@ -1096,10 +1092,6 @@ video {
     margin-bottom: 0px;
   }
 
-  .md\:hidden {
-    display: none;
-  }
-
   .md\:w-3\/4 {
     width: 75%;
   }
@@ -1118,6 +1110,10 @@ video {
 
   .md\:justify-between {
     justify-content: space-between;
+  }
+
+  .md\:border-b-2 {
+    border-bottom-width: 2px;
   }
 
   .md\:px-6 {
@@ -1201,6 +1197,10 @@ video {
 
   .lg\:justify-between {
     justify-content: space-between;
+  }
+
+  .lg\:border-0 {
+    border-width: 0px;
   }
 
   .lg\:px-0 {
