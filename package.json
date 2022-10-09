@@ -7,10 +7,12 @@
   },
   "husky": {
     "hooks": {
-      "pre-commit": "npm run tailwindcss -i ./styles/input.css -o ./dist/output.css --watch"
+      "pre-commit": "npm run start"
     }
   },
   "scripts": {
-    "start": "tailwindcss -i ./styles/input.css -o ./dist/output.css --watch"
+    "start": "echo \"tailwindcss -i ./styles/input.css -o ./dist/output.css --watch\"",
+    "postinstall": "node ./node_modules/husky/lib/installer/bin install",
+    "deploy": "git push origin `git subtree split --prefix dist master`:gh-pages --force"
   }
 }
